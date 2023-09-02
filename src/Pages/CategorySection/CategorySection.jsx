@@ -5,12 +5,12 @@ import CategoryItems from "./CategoryItems";
 import { Arrows } from "../../svg/Arrows/Arrows";
 export default function CategorySection() {
   return (
-    <div className="bg-[#F7FAFC] pt-[67px]">
-      <div className="nav_container 2xl:w-[1542px] 2xl:mx-auto xl:w-[1320px] xl:mx-auto lg:w-[1320px] w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-4 relative">
+    <div className="bg-[#F7FAFC]">
+      <div className="nav_container 2xl:w-[1542px] h-[594px] 2xl:mx-auto xl:w-[1320px] xl:mx-auto lg:w-[1320px] w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-4 relative">
         <div>
-          <div className="category_heading ">
-            <div className="lg:flex justify-between items-center mb-[22px]">
-              <h2 className="2xl:text-[32px] xl:text-[32px] lg:text-[32px] text-[#003] font-semibold  ">
+          <div className="category_heading pt-[52px]">
+            <div className="lg:flex justify-between items-center pb-[18px]">
+              <h2 className="2xl:text-[32px] xl:text-[32px] lg:text-[32px] text-[#003] font-semibold ">
                 Explorez par Catégorie
               </h2>
               <div className="flex items-center gap-[10px]">
@@ -26,7 +26,7 @@ export default function CategorySection() {
             </p>
           </div>
           {/* category single items */}
-          <div className="pt-[59px] pb-[84px]">
+          <div className="pt-[59px] ">
             <CategoryItems />
           </div>
           {/* category single items */}

@@ -17,7 +17,7 @@ export default function Navbar() {
   const [finalModal, setFinalModal] = useState(false);
   return (
     <div className=" pt-[24px] bg-[var(--header-bg-color)] cursor-pointer">
-      <div className="nav_container 2xl:w-[1542px] 2xl:mx-auto xl:w-[1542px] xl:mx-auto lg:w-[1542px] w-full 2xl:h-[44px]  mx-auto  relative  ">
+      <div className="nav_container 2xl:w-[1542px] 2xl:mx-auto xl:w-[1342px] xl:mx-auto lg:w-[1542px] w-full 2xl:h-[44px]  mx-auto  relative  ">
         <div className="2xl:flex xl:flex lg:flex flex justify-between items-center">
           {/* mobile view */}
           <div className="2xl:hidden xl:hidden lg:hidden md:block sm:block block">
@@ -66,7 +66,11 @@ export default function Navbar() {
             </div>
             <div className="nav_right_items 2xl:flex xl:flex lg:flex gap-[25px]">
               <div className="flex items-center justify-center 2xl:py-0 xl:py-0 lg:py-0 gap-[7px]">
-                <img className="w-[23px] h-[23px] pb-[3px]" src={people} alt="people" />
+                <img
+                  className="w-[23px] h-[23px] pb-[3px]"
+                  src={people}
+                  alt="people"
+                />
                 <li className="2xl:text-[15px] xl:text-[15px] lg:text-[15px] 2xl:font-[600] xl:font-[600] lg:font-[600] text-[#006]">
                   Connexion
                 </li>

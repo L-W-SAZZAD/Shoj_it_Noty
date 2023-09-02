@@ -356,7 +356,7 @@ export default function Notices() {
         </div>
         {/* single notes 6*/}
       </div>
-      <div className="pt-[74px] pb-[75px] flex justify-between items-center cursor-pointer">
+      <div className=" flex justify-between items-center cursor-pointer pt-[81px] pb-[79px]">
         <p className="  flex items-center text-[#006] font-medium text-[15px] gap-[10px]">
           Trouver d'autres entreprises recommandées{" "}
           <div className="w-[18px]">
