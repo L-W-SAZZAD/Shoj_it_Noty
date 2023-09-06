@@ -36,7 +36,7 @@ export default function Navbar() {
     console.log(position);
   }, [position, open, subModal, verify, checkOut, finalModal]);
   return (
-    <div className=" pt-[24px] bg-[var(--header-bg-color)] cursor-pointer sticky top-0 left-0 w-full z-50 pb-[10px]">
+    <div className=" pt-[24px] bg-[var(--header-bg-color)] cursor-pointer relative top-0 left-0 w-full z-50 pb-[10px]">
       <div className="nav_container 2xl:w-[1542px] 2xl:mx-auto xl:w-[1342px] xl:mx-auto lg:w-[1542px] w-full 2xl:h-[44px]  mx-auto  relative  ">
         <div className="2xl:flex xl:flex lg:flex flex justify-between items-center">
           {/* mobile view */}
