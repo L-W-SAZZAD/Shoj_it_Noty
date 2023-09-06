@@ -77,8 +77,8 @@ p {
 }
 .uncommon_btn2 {
   border-radius: 53px;
-  border: 1px solid #CFCFCF;
-  background: #FFF; 
+  border: 1px solid #cfcfcf;
+  background: #fff;
   color: #000;
 }
 .uncommon_btn {
@@ -238,7 +238,16 @@ p {
   margin-left: 5px;
 }
 
-.css-1e8dhvr-MuiChip-root{
+.css-1e8dhvr-MuiChip-root {
   background-color: none !important;
   color: #666 !important;
+}
+
+.hero_btn {
+  background: var(--gradient-background);
+  border-radius: 62px;
+}
+.font_text {
+  font-family: var(--primary-font);
+  letter-spacing: 0.01em;
 }

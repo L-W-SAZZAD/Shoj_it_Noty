@@ -15,14 +15,14 @@ export default function Text() {
           text.length > 0 ? "rounded-[28px]" : "rounded-[62px]  "
         }`}
       >
-        <div className={`relative px-[22px] ${text.length > 0 && "px-[22px]"}`}>
+        <div className={`relative   ${text.length > 0 && "px-[16px]"}`}>
           <input
             onChange={(e) => setText(e.target.value)}
             type="text"
             placeholder="Recherchez un établissement... (Boutiques, Restaurants, etc.)"
             className={`outline-none   placeholder:text-[13px] 
          
-            placeholder:font-medium bg-transparent ${
+            placeholder:font-medium placeholder:relative placeholder:left-[20px] placeholder:top-[-1px] bg-transparent ${
               text.length > 1 ? "h-[65px]" : "h-[57px] "
             } ${
               text.length > 1 && "border-b-[2px] border-[#EFEFEF]"
