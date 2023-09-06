@@ -10,7 +10,7 @@ import category8 from "../../assets/Category/SVGRepo_iconCarrier (6).png";
 
 export default function CategoryItems() {
   return (
-    <div className="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1  gap-[45px] ">
+    <div className="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1  gap-[45px]  ">
       <div className=" relative  single_items bg-[var(--category-box-color)] rounded-[13px] 2xl:w-[352px] 2xl:h-[139px] pl-[21px] 2xl:pt-[26px] 2xl:pb-0 pt-[26px] pb-[26px]">
         <img className="w-[49px] h-[44px]  " src={category1} alt="category1" />
         <h3 className="absolute bottom-[29px] font-[600] text-[17px]">
@@ -36,7 +36,7 @@ export default function CategoryItems() {
         </h3>
       </div>
       {/* 4 */}
-      <div className="relative single_items bg-[var(--category-box-color)] rounded-[13px] 2xl:w-[352px] 2xl:h-[139px] pl-[21px] 2xl:pt-[27px] 2xl:pb-0 pt-[26px] pb-[26px]">
+      <div className="relative single_items bg-[var(--category-box-color)] rounded-[13px] 2xl:w-[352px] 2xl:h-[139px] pl-[21px] 2xl:pt-[27px] 2xl:pb-0 pt-[26px] pb-[26px] right-[-1px]">
         <img
           className="2xl:w-[42px] 2xl:h-[42px] w-[42px] h-[42px] "
           src={category7}
@@ -81,7 +81,7 @@ export default function CategoryItems() {
         </h3>
       </div>
       {/* 8 */}
-      <div className="relative single_items bg-[var(--category-box-color)] rounded-[13px] 2xl:w-[352px] 2xl:h-[139px] pl-[21px] 2xl:pt-[27px] 2xl:pb-0 pt-[26px] pb-[26px]">
+      <div className="relative single_items bg-[var(--category-box-color)] rounded-[13px] 2xl:w-[352px] 2xl:h-[139px] pl-[21px] 2xl:pt-[27px] 2xl:pb-0 pt-[26px] pb-[26px] right-[-1px]">
         <img
           className="2xl:w-[42px] 2xl:h-[42px] w-[43px] h-[43px] "
           src={category8}

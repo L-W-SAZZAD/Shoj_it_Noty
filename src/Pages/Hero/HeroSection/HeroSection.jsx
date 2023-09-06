@@ -6,7 +6,7 @@ import {
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
 
-import Text from "../../utilitis/Text/Text";
+import Text from "../../../utilitis/Text/Text";
 export default function HeroSection() {
   const [show, setShow] = useState(false);
   console.log(show);

@@ -13,7 +13,7 @@ export default function Hero() {
   };
   return (
     <div className="bg-[#EAF4FC] rounded-b-[50px]">
-      <div className="w-[1542px] mx-auto h-[572px] relative right-[3344px]">
+      <div className="w-[1542px] mx-auto h-[572px] relative ">
         <div className="right_site ">
           <h1 className="pt-[77px] text-[48px] font-bold leading-[1.2] text-[#006] relative left-[-3px] w-[867px] mb-[34px] ">
             Noty - Votre guide de confiance pour les services et produits en

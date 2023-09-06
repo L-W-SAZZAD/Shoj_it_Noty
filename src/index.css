@@ -249,5 +249,4 @@ p {
 }
 .font_text {
   font-family: var(--primary-font);
-  letter-spacing: 0.01em;
 }

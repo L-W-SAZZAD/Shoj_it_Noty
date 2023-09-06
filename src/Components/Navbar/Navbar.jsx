@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import people from "../../assets/header_icons/SVGRepo_iconCarrier.svg";
 import logo from "../../assets/Logo/Official Logo 5.png";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
@@ -15,6 +15,26 @@ export default function Navbar() {
   const [verify, setVerify] = useState(false);
   const [checkOut, setCheckOut] = useState(false);
   const [finalModal, setFinalModal] = useState(false);
+  const [position, setPosition] = useState(0);
+
+  useEffect(() => {
+    if (open === true) {
+      setPosition(48);
+    }
+    if (subModal === true) {
+      setPosition(20);
+    }
+    if (verify === true) {
+      setPosition(20);
+    }
+    if (checkOut === true) {
+      setPosition(20);
+    }
+    if (finalModal === true) {
+      setPosition(20);
+    }
+    console.log(position);
+  }, [position, open, subModal, verify, checkOut, finalModal]);
   return (
     <div className=" pt-[24px] bg-[var(--header-bg-color)] cursor-pointer sticky top-0 left-0 w-full z-50 pb-[10px]">
       <div className="nav_container 2xl:w-[1542px] 2xl:mx-auto xl:w-[1342px] xl:mx-auto lg:w-[1542px] w-full 2xl:h-[44px]  mx-auto  relative  ">
@@ -106,7 +126,13 @@ export default function Navbar() {
         </div>
       </div>
       {open && (
-        <ShowModal setSubModal={setSubModal} open={open} setOpen={setOpen} />
+        <ShowModal
+          setSubModal={setSubModal}
+          open={open}
+          setPosition={setPosition}
+          position={position}
+          setOpen={setOpen}
+        />
       )}
       {subModal && (
         <SubModal2

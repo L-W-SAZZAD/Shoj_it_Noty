@@ -5,7 +5,13 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import SignUpModal from "../SignUpModal/SignUpModal";
 
-export default function ShowModal({ open, setOpen, setSubModal }) {
+export default function ShowModal({
+  open,
+  setOpen,
+  setSubModal,
+  setPosition,
+  position,
+}) {
   return (
     <div>
       <div>
@@ -14,7 +20,9 @@ export default function ShowModal({ open, setOpen, setSubModal }) {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <div className=" absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]  2xl:h-[751px] xl:h-[650px] lg:h-[600px] md:h-auto   bg-[#ffffff] rounded-[16px]">
+          <div
+            className={`absolute top-[${position}%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]  2xl:h-[730px] xl:h-[650px] lg:h-[600px] md:h-auto   bg-[#ffffff] rounded-[20px]`}
+          >
             <SignUpModal
               setOpen={setOpen}
               open={open}

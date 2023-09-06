@@ -15,53 +15,53 @@ export default function Footer() {
             <div className="footer lg:flex justify-between   pt-[84px]">
               <div className="logo">
                 <img className="w-[181.02px] h-[76px]" src={logo} alt="logo" />
-                <p className="w-[336px] h-[84px] flex items-center  leading-[151.253%] text-[14px] mt-[10px] text-[#fff] font-medium footer_text">
+                <p className="w-[336px] h-[84px] flex items-center font-normal  leading-[151.253%] text-[14px] mt-[12px] text-[#fff]  footer_text tracking-[0.001em]">
                   Construisant des ponts entre les consommateurs et les
                   entreprises pour une meilleure expérience de consommation en
                   Tunisie.
                 </p>
               </div>
 
-              <div className="footer_list flex flex-wrap gap-[100px] pt-[15px] footer_text">
-                <div>
-                  <h2 className="text-[20px] font-medium text-white pb-[33px] footer_text">
+              <div className="footer_list flex flex-wrap gap-[100px] pt-[15px] footer_text relative left-[-5px]">
+                <div className=" relative left-[0px]">
+                  <h2 className="text-[20px] font-medium text-white pb-[35px] footer_text tracking-[0.001em]">
                     Noty
                   </h2>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Notre mission
                   </li>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Carrières
                   </li>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Nous contacter
                   </li>
-                  <li className="text-[16px] font-medium text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Guide d’utilisation
                   </li>
                 </div>
-                <div>
-                  <h2 className="text-[20px] font-medium text-white pb-[33px] footer_text">
+                <div className=" relative left-[2px]">
+                  <h2 className="text-[20px] font-medium text-white pb-[35px] footer_text tracking-[0.001em]">
                     Entreprises
                   </h2>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Pourquoi Noty?
                   </li>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Plans & tarifs
                   </li>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Espace Entreprise
                   </li>
                 </div>
-                <div>
-                  <h2 className="text-[20px] font-medium text-white pb-[33px] footer_text">
+                <div className=" relative left-[2px]">
+                  <h2 className="text-[20px] font-medium text-white pb-[35px] footer_text tracking-[0.001em]">
                     Légal
                   </h2>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Conditions d'utilisation
                   </li>
-                  <li className="text-[16px] font-medium mb-[7px] text-[#D0D0D0] footer_text">
+                  <li className="text-[16px] font-medium mb-[8px] text-[#D0D0D0] footer_text tracking-[0.001em]">
                     Politique de confidentialité
                   </li>
                 </div>
@@ -75,18 +75,23 @@ export default function Footer() {
                   &copy; 2023 Noty - Tous droits réservés.
                 </p>
                 <div className="flex items-center">
-                  <svg width="2" height="22" viewBox="0 0 2 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="2"
+                    height="22"
+                    viewBox="0 0 2 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path d="M1 1L1 21" stroke="white" stroke-linecap="round" />
                   </svg>
-                  <p className="text-white text-[12px]  ml-[10px] footer_text font-medium   ">
+                  <p className="text-white text-[12px]  ml-[8px] footer_text font-medium   ">
                     Conçu et Développé par
                   </p>
 
-                  <div className="lg:block hidden mt-[9px]">
+                  <div className="lg:block hidden mt-[9px] relative left-[-2px]">
                     <img src={footer} alt="" />
                   </div>
                 </div>
-
               </div>
               <div className="social_icons flex gap-[17px] items-center justify-center">
                 <img
