@@ -15,19 +15,21 @@ export default function Text() {
           text.length > 0 ? "rounded-[28px]" : "rounded-[62px]  "
         }`}
       >
-        <div className={`relative   ${text.length > 0 && "px-[16px]"}`}>
+        <div className={` relative   ${text.length > 0 && "px-[16px]"}`}>
           <input
             onChange={(e) => setText(e.target.value)}
             type="text"
             placeholder="Recherchez un établissement... (Boutiques, Restaurants, etc.)"
-            className={`outline-none   placeholder:text-[13px] 
-         
-            placeholder:font-medium placeholder:relative placeholder:left-[20px] placeholder:top-[-1px] bg-transparent ${
-              text.length > 1 ? "h-[65px]" : "h-[57px] "
+            className={`outline-none bg-transparent ${
+              text.length > 1 ? "h-[65px]" : "h-[57px]"
             } ${
               text.length > 1 && "border-b-[2px] border-[#EFEFEF]"
-            }  w-full bg-transparent  placeholder:text-[rgb(102,119,153)] `}
+            } w-full placeholder:text-[rgb(102,119,153)] placeholder:text-[13px] relative top-[-1px] placeholder:font-medium`}
+            style={{
+              paddingLeft: "20px", // Adjust left padding as needed
+            }}
           />
+
           {text.length > 0 && (
             <button className=" absolute right-[5px] top-[5px] h-[55px] w-[120px] rounded-3xl px-[9px] bg-[#DAE4FF] py-[11px] text-[#000099] text-[15px] font-semibold">
               Rechercher
