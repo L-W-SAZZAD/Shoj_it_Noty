@@ -15,16 +15,16 @@ export default function Text() {
           text.length > 0 ? "rounded-[28px]" : "rounded-[62px]  "
         }`}
       >
-        <div className={` relative   ${text.length > 0 && "px-[16px]"}`}>
+        <div className={` relative   ${text.length > 0 && "px-[0px]"}`}>
           <input
             onChange={(e) => setText(e.target.value)}
             type="text"
             placeholder="Recherchez un établissement... (Boutiques, Restaurants, etc.)"
             className={`outline-none bg-transparent ${
-              text.length > 1 ? "h-[65px]" : "h-[57px]"
+              text.length > 0 ? "h-[65px]" : "h-[57px]"
             } ${
-              text.length > 1 && "border-b-[2px] border-[#EFEFEF]"
-            } w-full placeholder:text-[rgb(102,119,153)] placeholder:text-[13px] relative top-[-1px] placeholder:font-medium`}
+              text.length > 0 && "  border-b-[2px] border-[#EFEFEF] "
+            } w-full placeholder:text-[rgb(102,119,153)] placeholder:text-[13px] relative top-[-1px] placeholder:font-medium pl-[20px]`}
             style={{
               paddingLeft: "20px", // Adjust left padding as needed
             }}
@@ -37,76 +37,106 @@ export default function Text() {
           )}
         </div>
         {text?.length > 0 && (
-          <div className={`w-[98%] `}>
+          <div className={`w-[98%]  `}>
             {/* 1 */}
             <div
-              className={`flex items-center justify-between  hover:bg-[#EEF3FF]  duration-200 rounded-sm py-2 w-[97%] mx-auto mt-2 px-[16px] ${
-                text.length > 0 && "px-[16px]"
+              className={`mt-[13px] flex  justify-between items-start hover:bg-[#EEF3FF]  duration-200 rounded-sm py-[4px] w-[97%] mx-auto   relative top-[-2px] ${
+                text.length > 0 && "pl-[12px]"
               }`}
             >
               <div>
-                <li className="font-bold text-[16px] text-[#0D0D0D]">Zara</li>
-                <p className="text-[#D2D2D2] font-medium">zara.com/tn</p>
+                <li className="font-extrabold text-[16px] text-[#0D0D0D] ">
+                  ZARA
+                </li>
+                <p className="text-[#D2D2D2] font-medium text-[12px]  relative top-[1px] left-[1px] tracking-wide">
+                  zara.com/tn
+                </p>
               </div>
-              <div className="flex gap-2 justify-center items-center">
-                <div className="flex items-center bg-[#FFF8BF] p-1 font-medium">
+              <div className="flex gap-[6px] justify-center p-1 pr-[5px] items-center">
+                <div className="flex items-center bg-[#FFF8BF] px-[4px] py-[2px]   font-medium">
                   {" "}
-                  <AiFillStar color="#FCD700" size="12px" />
-                  <p className=" font-medium">2.9/5</p>
+                  <AiFillStar
+                    color="#FCD700"
+                    size="17px"
+                    className="pr-[2px]"
+                  />
+                  <p className=" font-medium text-[13px]">2.9/5</p>
                 </div>
-                <div className="w-[10px] h-[10px] bg-[#FCD700] rounded-full"></div>
-                <li className="text-[#000033] font-semibold">253 avis</li>
+                <div className="w-[6px] h-[6px] bg-[#FCD700] rounded-full"></div>
+                <li className="text-[#000033] font-bold text-[13px] ">
+                  253 avis
+                </li>
               </div>
             </div>
             {/* 1 */}
             {/* 1 */}
             <div
-              className={`flex items-center justify-between  mt-5 hover:bg-[#EEF3FF] rounded-sm duration-200 py-2 w-[97%] mx-auto ${
-                text.length > 0 && "px-[16px]"
+              className={`mt-[11px] flex items-start  justify-between   hover:bg-[#EEF3FF] rounded-sm duration-200 py-[10px] w-[97%] mx-auto relative top-[-2.34px] ${
+                text.length > 0 && "pl-[12px]"
               } `}
             >
               <div>
-                <li className="font-bold text-[16px]">BluZarTech Solutions</li>
-                <p className="text-[#D2D2D2] font-medium">bluzartech.tn</p>
+                <li className="font-extrabold text-[16px] ">
+                  BluZarTech Solutions
+                </li>
+                <p className="text-[#D2D2D2] font-medium text-[12px] tracking-wide">
+                  bluzartech.tn
+                </p>
               </div>
-              <div className="flex gap-2 justify-center items-center">
-                <div className="flex items-center bg-[#D0F3CB] p-1 font-medium">
+              <div className="flex gap-[6px] justify-center pr-[5px] items-center">
+                <div className="flex items-center bg-[#D0F3CB] px-[4px] py-[2px] font-medium">
                   {" "}
-                  <AiFillStar color="#43A047" size="12px" />
-                  <p className=" font-medium">2.9/5</p>
+                  <AiFillStar
+                    color="#43A047"
+                    size="17px"
+                    className=" pr-[2px]"
+                  />
+                  <p className=" font-medium text-[13px]">4.8/5</p>
                 </div>
-                <div className="w-[10px] h-[10px] bg-[#43A047] rounded-full"></div>
-                <li className="text-[#000033] font-semibold">253 avis</li>
+                <div className="w-[6px] h-[6px] bg-[#43A047] rounded-full"></div>
+                <li className="text-[#000033] font-bold text-[13px] ">
+                  11 avis
+                </li>
               </div>
             </div>
 
             {/* 1 */}
             {/* 1 */}
             <div
-              className={`flex items-center justify-between mt-5  hover:bg-[#EEF3FF] duration-200 py-2 w-[97%] mx-auto ${
-                text.length > 0 && "px-[16px]"
+              className={`flex  justify-between items-start mt-[1px]  hover:bg-[#EEF3FF] duration-200 py-2 w-[97%] mx-auto ${
+                text.length > 0 && "pl-[12px] "
               }`}
             >
               <div>
-                <li className="font-bold text-[16px]">ProZarMax</li>
-                <p className="text-[#D2D2D2] font-medium">prozarmax.tn</p>
+                <li className="font-extrabold text-[16px] ">ProZarMax</li>
+                <p className="text-[#D2D2D2] font-medium text-[12px] tracking-wide">
+                  prozarmax.tn
+                </p>
               </div>
-              <div className="flex gap-2 justify-center items-center">
-                <div className="flex items-center bg-[#F7CAFF] p-1 font-medium">
+              <div className="flex gap-[6px] justify-center pr-[5px] items-center">
+                <div className="flex items-center bg-[#F7CAFF] px-[4px] py-[2px] rounded-md   font-medium">
                   {" "}
-                  <AiFillStar color="#7B1FA2" size="12px" />
-                  <p className=" font-medium">2.9/5</p>
+                  <AiFillStar
+                    color="#7B1FA2"
+                    size="17px"
+                    className="pr-[2px]"
+                  />
+                  <p className=" font-medium text-[13px]">3.7/5</p>
                 </div>
-                <div className="w-[10px] h-[10px] bg-[#7B1FA2] rounded-full"></div>
-                <li className="text-[#000033] font-semibold">253 avis</li>
+                <div className="w-[6px] h-[6px] bg-[#7B1FA2] rounded-full"></div>
+                <li className="text-[#000033]  text-[13px] font-bold">
+                  2465 avis
+                </li>
               </div>
             </div>
             {/* 1 */}
-            <hr className="mt-2 w-[410px] mx-auto" />
+            <hr className="mt-[16px] w-[410px] mx-auto" />
             {/*  */}
             <div className=" flex justify-center items-center p-[15px] ">
-              <button className="w-[465px] h-[46px] py-[14px] text-center text-[#000000]  border-[1px] border-[#CFCFCF]  justify-center rounded-full gap-[25px] flex items-center font-semibold text-[15px] ">
-                Afficher tous les résultats
+              <button className="w-[426px] h-[46px]  text-center text-[#000000]  border-[1px] border-[#CFCFCF]  justify-center rounded-full gap-[25px] flex items-center font-semibold text-[15px] ">
+                <span className=" relative left-[5px]">
+                  Afficher tous les résultats
+                </span>
                 <svg
                   width="30"
                   height="16"
