@@ -13,17 +13,17 @@ export default function FinalModal({ setFinalModal, finalModal }) {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <div className=" absolute top-[36%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]    2xl:h-auto h-auto  bg-[#FFF] rounded-[20px] ">
+          <div className=" absolute top-[35.83%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]    2xl:h-[509px] h-auto  bg-[#FFF] rounded-[16px] ">
             <div className=" cursor-pointer ">
               <RxCross2
                 color="#D6D6D6"
-                size="30px"
-                className="cross_btn absolute right-5 top-2   mt-[16px] hover:rotate-180 duration-500"
+                size="27px"
+                className="cross_btn absolute right-[20px] top-[20px]    hover:rotate-180 duration-500"
                 onClick={() => {
                   setFinalModal(false);
                 }}
               />
-              <div className="signUp_container 2xl:px-[141px] pt-[32px] xl:px-[132px] lg:px-[110px] px-[70px]">
+              <div className="signUp_container 2xl:px-[141px] pt-[36px] xl:px-[132px] lg:px-[110px] px-[70px]">
                 <div>
                   <div className="pb-[40px]">
                     <img
@@ -32,10 +32,10 @@ export default function FinalModal({ setFinalModal, finalModal }) {
                       alt=""
                     />
                   </div>
-                  <h3 className="text-[16px] w-[380px] font-semibold text-[#000] pb-[14px]">
+                  <h3 className="text-[16px] w-[380px]  font-semibold text-[#000] pb-[15px] relative top-[-1px] ">
                     Votre mot de passe a été réinitialisé avec succès.
                   </h3>
-                  <p className="text-[#666] font-medium text-[14px] pb-[40px] leading-[18px] w-[372px] mx-auto text-start relative  top-[2px]">
+                  <p className="text-[#666] font-medium text-[14px] pb-[48px] leading-[17px] w-[372px] mx-auto text-start relative   top-[2px]">
                     Vous pouvez désormais accéder à votre compte en utilisant
                     votre nouveau mot de passe. N'hésitez pas à nous contacter
                     si vous avez besoin d'aide supplémentaire. Merci pour votre
@@ -53,7 +53,7 @@ export default function FinalModal({ setFinalModal, finalModal }) {
                     >
                       <button
                         type="submit"
-                        className="common_btn 2xl:w-[372px] h-[46px]  w-full rounded-full text-[#fff] font-semibold text-[15px] "
+                        className="common_btn 2xl:w-[372px] h-[46px]  w-full rounded-full text-[#fff] font-semibold text-[15px] relative top-[1px] "
                       >
                         Se connecter
                       </button>

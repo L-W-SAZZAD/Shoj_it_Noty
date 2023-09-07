@@ -18,15 +18,15 @@ export default function SignUpModal({
           setOpen(false);
         }}
         color="#D6D6D6"
-        size="30px"
-        className="cross_btn absolute right-5 top-2   mt-[16px] hover:rotate-180 duration-500"
+        size="27px"
+        className="cross_btn absolute right-[20px] top-[20px]    hover:rotate-180 duration-500"
       />
       <div className="signUp_container w-[372px] mx-auto pt-[72px]">
         <div>
-          <h3 className=" relative top-[-8px] text-[16px] font-semibold text-[#000] 2xl:pb-[13px] xl:pb-3 pb-3 ">
+          <h3 className=" relative top-[4px] text-[16px] font-bold text-[#000] pb-[24px]  tracking-[-0.0070em]">
             Connectez-vous à votre compte
           </h3>
-          <p className="text-[#666] font-medium text-[14px] pb-[51px]">
+          <p className="text-[#666] font-medium text-[14px] pb-[51px] ">
             Accédez à votre espace personnel en quelques clics.
           </p>
           {/* facebook btn */}
@@ -48,7 +48,7 @@ export default function SignUpModal({
                   fill="white"
                 />
               </svg>
-              <span className=" font-bold text-[15px] ml-[54px]">
+              <span className=" font-bold text-[15px] ml-[54px] relative top-[-1px] tracking-[-0.0070em]">
                 {" "}
                 Continuer avec Facebook
               </span>
@@ -84,17 +84,16 @@ export default function SignUpModal({
                   fill="#EA4335"
                 />
               </svg>
-              <span className=" font-bold text-[15px] ml-[63px]">
-                {" "}
+              <span className=" font-bold text-[15px] relative top-[-1px]  ml-[63px] tracking-[-0.0070em]">
                 Continuer avec Google
               </span>
             </button>
           </div>
           {/* google */}
           {/* divider */}
-          <div className="my-[47px]">
+          <div className="my-[45px]">
             <Divider>
-              <p className="text-[14px]">Ou bien</p>
+              <p className="text-[13px]">Ou bien</p>
             </Divider>
           </div>
           {/* divider */}
@@ -102,46 +101,45 @@ export default function SignUpModal({
             <div>
               <label
                 htmlFor=" e-mail"
-                className="text-[14px] text-[#000] font-bold pb-[10px] block relative left-[11px] top-[-2px]"
+                className="text-[14px] text-[#000] font-bold pb-[9px] block relative left-[12px] top-[-1px] tracking-[-0.0070em]"
               >
                 Adresse e-mail
               </label>
             </div>
-            <div className="input_filed w-[372px] h-[46px]">
+            <div className="input_filed w-[372px] h-[46px] relative top-[-2px]">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Entrez votre adresse e-mail"
-                className=" pl-[25px] w-full h-full border-[1px] rounded-full border-[#CFCFCF]  outline-none placeholder:text-[14px] placeholder:text-[#CFCFCF]"
+                className=" pl-[24px] w-full h-full border-[1px] rounded-full border-[#CFCFCF]  outline-none placeholder:text-[14px] placeholder:text-[#CFCFCF] placeholder:relative placeholder:top-[-2px] placeholder:tracking-[0.0070em]"
               />
             </div>
-            <div className="flex items-center justify-between mt-[17px]">
+            <div className="flex items-center justify-between mt-[13px]">
               <label
                 htmlFor="Password"
-                className="text-[14px] text-[#000] font-bold pb-[10px] block relative left-[12px] "
+                className="text-[14px] text-[#000] font-bold pb-[9px] block relative left-[12px] top-[-0px] tracking-[-0.0070em]"
               >
                 Mot de passe
               </label>
-              <a className="text-[13px] font-medium text-[#333333] underline  relative right-[10px]">
+              <a className="text-[13px] font-semibold text-[#333333] relative underline underline-offset-[3px] right-[12px] top-[-3px] tracking-[-0.009em]">
                 Oublié?
               </a>
             </div>
-            <div className="input_filed w-[372px] h-[46px]">
+            <div className="input_filed w-[372px] h-[46px] relative top-[-1px]">
               <input
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Entrez votre mot de passe"
-                className=" pl-[25px] w-full h-full border-[1px] rounded-full border-[#CFCFCF]  outline-none placeholder:text-[14px] placeholder:text-[#CFCFCF]"
+                className=" pl-[24px] w-full h-full border-[1px] rounded-full border-[#CFCFCF]  outline-none placeholder:text-[14px] placeholder:text-[#CFCFCF] placeholder:relative placeholder:top-[-2px] placeholder:tracking-[0.0070em]"
               />
             </div>
             {/* check box */}
-            <div className="flex items-center gap-[5px] mt-[11px] relative left-[16px] mb-[34px]">
+            <div className="flex items-center gap-[5px] mt-[10px] relative left-[12px] mb-[34px] checkBox_div">
               <input
                 type="checkbox"
-                name="text"
-                className="h-[18px] w-[18px] border border-[#CFCFCF]  outline-none"
+                className=" checkBox h-[18px] w-[18px]   outline-none block "
               />
               <p className="text-[13px] font-medium text-[#333]">
                 Se souvenir de moi
@@ -150,13 +148,13 @@ export default function SignUpModal({
             {/* check box */}
             {/* button */}
             <div
-              className="2xl:pb-0 pb-5"
+              className=""
               onClick={() => {
                 setOpen(false);
                 setSubModal(true);
               }}
             >
-              <button className="common_btn 2xl:w-[372px] 2xl:h-[46px] rounded-full w-full h-[46px] text-[#fff] font-semibold text-[15px]  ">
+              <button className="common_btn 2xl:w-[372px] 2xl:h-[46px] rounded-full w-full h-[46px] text-[#fff] font-medium text-[15px]  relative top-[-1px] placeholder:tracking-[-0.0070em]">
                 Se connecter
               </button>
             </div>

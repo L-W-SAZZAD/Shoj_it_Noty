@@ -19,22 +19,22 @@ export default function VerifyModal({
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <div className=" absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]    2xl:h-[488px] xl:h-[488px] h-auto   bg-[#FFF] rounded-[20px] ">
+          <div className=" absolute top-[34.78%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]    2xl:h-[488px] xl:h-[488px] h-auto   bg-[#FFF] rounded-[16px] ">
             <div className=" cursor-pointer ">
               <RxCross2
                 onClick={() => {
                   setVerify(false);
                 }}
                 color="#D6D6D6"
-                size="30px"
-                className="cross_btn absolute right-5 top-2   mt-[16px] hover:rotate-180 duration-500"
+                size="27px"
+                className="cross_btn absolute right-[20px] top-[20px]    hover:rotate-180 duration-500"
               />
-              <div className="signUp_container 2xl:px-[141px] pt-[72px] xl:px-[132px] lg:px-[110px] px-[70px]">
+              <div className="signUp_container 2xl:px-[141px] pt-[75px] xl:px-[132px] lg:px-[110px] px-[70px]">
                 <div>
-                  <h3 className=" text-[16px] font-semibold text-[#000] pb-[14px]">
+                  <h3 className=" text-[16px] font-bold text-[#000] pb-[14px] tracking-[-0.0070em]">
                     Code de Vérification OTP
                   </h3>
-                  <p className="text-[#666] font-medium text-[14px] pb-[47px] leading-[18px] w-[352px] mx-auto text-start relative left-[-11px] top-[2px]">
+                  <p className="text-[#666] font-medium text-[14px] pb-[48px] leading-[17px] w-[352px] mx-auto text-start relative left-[-10px] top-[3px]">
                     Veuillez saisir le code de vérification à 7 chiffres que
                     nous avons envoyé à votre adresse e-mail pour réinitialiser
                     votre mot de passe.
@@ -44,7 +44,7 @@ export default function VerifyModal({
                     <div>
                       <label
                         htmlFor=" e-mail"
-                        className="text-[14px] text-[#000] font-bold pb-[15px] block relative left-[12px]"
+                        className="text-[14px] text-[#000] font-bold pb-[18px] block relative left-[12px] tracking-[-0.0070em]"
                       >
                         Code de Vérification
                       </label>
@@ -102,8 +102,8 @@ export default function VerifyModal({
                         setVerify(false);
                       }}
                     >
-                      <button className="common_btn 2xl:w-[372px] h-[46px] w-full rounded-full text-[#fff] font-semibold text-[15px] ">
-                        Valider
+                      <button className="common_btn 2xl:w-[372px] h-[46px] w-full rounded-full text-[#fff] font-medium text-[15px] ">
+                        <span className=" relative top-[1px]"> Valider</span>
                       </button>
                     </div>
                     {/* button */}
@@ -128,7 +128,10 @@ export default function VerifyModal({
                             fill="black"
                           />
                         </svg>
-                        Retour à la page de connexion
+                        <span className=" relative top-[1px] left-[2px]">
+                          {" "}
+                          Retour à la page de connexion
+                        </span>
                       </button>
                     </div>
                     {/* button */}

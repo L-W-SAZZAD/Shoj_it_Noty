@@ -21,7 +21,7 @@ export default function ShowModal({
           aria-describedby="modal-modal-description"
         >
           <div
-            className={`absolute top-[48%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]  2xl:h-[730px] xl:h-[650px] lg:h-[600px] md:h-auto   bg-[#ffffff] rounded-[20px]`}
+            className={`absolute top-[47.29%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]  2xl:h-[723px] xl:h-[650px] lg:h-[600px] md:h-auto   bg-[#ffffff] rounded-[16px]`}
           >
             <SignUpModal
               setOpen={setOpen}

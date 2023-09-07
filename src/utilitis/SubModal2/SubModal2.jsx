@@ -19,22 +19,22 @@ export default function SubModal2({
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <div className=" absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]    2xl:h-[488px] xl:h-[488px] lg:h-[488px] h-auto  bg-[#FFF] rounded-[20px] ">
+          <div className=" absolute top-[34.78%] left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[654px] xl:w-[654px] lg:w-[654px]  md:w-[654px] w-[90%]    2xl:h-[488px] xl:h-[488px] lg:h-[488px] h-auto  bg-[#FFF] rounded-[16px] ">
             <div className=" cursor-pointer ">
               <RxCross2
                 onClick={() => {
                   setSubModal(false);
                 }}
                 color="#D6D6D6"
-                size="30px"
-                className="cross_btn absolute right-5 top-2   mt-[16px] hover:rotate-180 duration-500"
+                size="27px"
+                className="cross_btn absolute right-[20px] top-[20px]    hover:rotate-180 duration-500"
               />
-              <div className="signUp_container pt-[72px] 2xl:px-0 px-10">
+              <div className="signUp_container pt-[75px] 2xl:px-0 px-10">
                 <div>
-                  <h3 className=" text-[16px] font-semibold text-[#000] pb-[14px] 2xl:w-[372px] w-full mx-auto 2xl:text-start text-start">
+                  <h3 className=" text-[16px] font-bold text-[#000] pb-[14px] 2xl:w-[372px] w-full mx-auto 2xl:text-start text-start tracking-[-0.0070em]">
                     Besoin d'aide pour récupérer votre compte ?
                   </h3>
-                  <p className="text-[#666] font-medium text-[14px] pb-[40px] leading-[18px] w-[342px] mx-auto text-start relative left-[-15px] top-[2px]">
+                  <p className="text-[#666] font-medium text-[14px] pb-[44px] leading-[17px] w-[342px] mx-auto text-start relative left-[-15px] top-[3px]">
                     Entrez votre adresse e-mail pour recevoir un code de
                     vérification unique (OTP) et réinitialiser votre mot de
                     passe.
@@ -44,7 +44,7 @@ export default function SubModal2({
                     <div>
                       <label
                         htmlFor=" e-mail"
-                        className="text-[14px] text-[#000] font-bold pb-[9px] relative left-[12px] top-[4px] block"
+                        className="text-[14px] text-[#000] font-bold pb-[12px] relative left-[12px] top-[4px] block tracking-[-0.0070em]"
                       >
                         Adresse e-mail
                       </label>
@@ -55,20 +55,23 @@ export default function SubModal2({
                         name="email"
                         id="email"
                         placeholder="Entrez votre adresse e-mail"
-                        className="2xl:w-[372px] w-full 2xl:h-[46px] h-[46px] pl-[25px] border rounded-full border-[#CFCFCF]  outline-none placeholder:text-[14px] placeholder:text-[#CFCFCF]"
+                        className="2xl:w-[372px] w-full 2xl:h-[46px] h-[46px] pl-[24px] border rounded-full border-[#CFCFCF]  outline-none placeholder:text-[14px] placeholder:text-[#CFCFCF] placeholder:relative placeholder:top-[-2px]"
                       />
                     </div>
 
                     {/* button */}
                     <div
-                      className=" pb-[15px] pt-[17px]"
+                      className=" pb-[17px] pt-[14px]"
                       onClick={() => {
                         setSubModal(false);
                         setVerify(true);
                       }}
                     >
-                      <button className="common_btn  w-full 2xl:h-[46px] h-[46px] rounded-full text-[#fff] font-semibold text-[15px] ">
-                        Envoyer le code
+                      <button className="common_btn  w-full 2xl:h-[46px] h-[46px] rounded-full text-[#fff] font-medium text-[15px] relative top-[2px]">
+                        <span className=" relative top-[1px]">
+                          {" "}
+                          Envoyer le code
+                        </span>
                       </button>
                     </div>
                     {/* button */}
@@ -93,7 +96,9 @@ export default function SubModal2({
                             fill="black"
                           />
                         </svg>
-                        Retour à la page de connexion
+                        <span className=" relative top-[1px] left-[2px] ">
+                          Retour à la page de connexion
+                        </span>
                       </button>
                     </div>
                     {/* button */}

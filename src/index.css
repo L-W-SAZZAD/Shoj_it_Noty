@@ -232,6 +232,18 @@ p {
   -webkit-tap-highlight-color: transparent !important;
   z-index: -1;
 }
+.css-919eu4 {
+  position: fixed;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  -webkit-tap-highlight-color: transparent;
+  z-index: -1;
+}
 .custom-image-size {
   width: 770px;
   height: 471px;
@@ -249,4 +261,7 @@ p {
 }
 .font_text {
   font-family: var(--primary-font);
+}
+.checkBox_div > input {
+  border: 1px solid red !important;
 }
