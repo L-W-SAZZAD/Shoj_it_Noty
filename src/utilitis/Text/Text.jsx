@@ -37,7 +37,7 @@ export default function Text() {
           />
 
           {text.length > 0 && (
-            <button className=" absolute right-[5px] top-[5px] h-[55px] w-[120px]  rounded-[600px] px-[9px] bg-[#DAE4FF] py-[11px] text-[#000099] text-[15px] font-semibold">
+            <button className=" absolute right-[5px] top-[5px] h-[55px] w-[120px]  rounded-[900px] px-[9px] bg-[#DAE4FF] py-[11px] text-[#000099] text-[15px] font-semibold">
               Rechercher
             </button>
           )}

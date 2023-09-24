@@ -92,7 +92,10 @@ export default function Navbar() {
               </div>
             </div>
             <div className="nav_right_items 2xl:flex xl:flex lg:flex gap-[25px]">
-              <div className="flex items-center justify-center 2xl:py-0 xl:py-0 lg:py-0 gap-[9px]">
+              <div
+                onClick={handelClick}
+                className="flex items-center justify-center 2xl:py-0 xl:py-0 lg:py-0 gap-[9px]"
+              >
                 <svg
                   className=" relative top-[-3px]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,10 +121,7 @@ export default function Navbar() {
                 </li>
               </div>
               <div className="2xl:py-0 xl:py-0 lg:py-0">
-                <button
-                  className="uncommon_btn w-[161px] h-[44px] rounded-full  text-[#fff]   flex justify-center items-center text-[15px] font-[500]  border-none outline-none tracking-[0.010em]"
-                  onClick={handelClick}
-                >
+                <button className="uncommon_btn w-[161px] h-[44px] rounded-full  text-[#fff]   flex justify-center items-center text-[15px] font-[500]  border-none outline-none tracking-[0.010em]">
                   Pour Entreprises
                 </button>
               </div>

@@ -27,7 +27,7 @@ export default function SubModal2({
                 }}
                 color="#D6D6D6"
                 size="27px"
-                className="cross_btn absolute right-[20px] top-[20px]    hover:rotate-180 duration-500"
+                className="cross_btn absolute right-[20px] top-[20px]    hover:text-black duration-300"
               />
               <div className="signUp_container pt-[75px] 2xl:px-0 px-10">
                 <div>

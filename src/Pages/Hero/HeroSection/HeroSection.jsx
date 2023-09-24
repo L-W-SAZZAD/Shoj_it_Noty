@@ -34,9 +34,12 @@ export default function HeroSection() {
               className="2xl:flex xl:block lg:block md:block items-center gap-[15px] pt-[132px] 2xl:absolute xl:absolute z-40"
             >
               <Text />
-              <div className="flex items-center gap-1 2xl:w-[230px] w-[230px]   2xl:h-[65px]   common_btn rounded-full text-white justify-center font-semibold text-[16px] 2xl:mt-0 mt-5 2xl:absolute xl:absolute 2xl:left-[470px] xl:left-[330px] 2xl:top-[132px] xl:top-[132px]">
-                <button className="  mr-[7px]">Laissez votre avis</button>
+              <div className="flex items-center gap-1 2xl:w-[230px] w-[230px]   2xl:h-[65px]   common_btn rounded-full text-white justify-center font-semibold text-[16px] 2xl:mt-0 mt-5 2xl:absolute xl:absolute 2xl:left-[470px] xl:left-[330px] 2xl:top-[132px] xl:top-[132px] cursor-pointer">
+                <button className="  mr-[7px] cursor-pointer">
+                  Laissez votre avis
+                </button>
                 <svg
+                  className=" cursor-pointer"
                   width="30"
                   height="16"
                   viewBox="0 0 30 16"

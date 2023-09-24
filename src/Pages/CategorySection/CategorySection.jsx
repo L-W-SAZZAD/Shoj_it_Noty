@@ -13,7 +13,7 @@ export default function CategorySection() {
               <h2 className="text-[32px] text-[#003] font-semibold ">
                 Explorez par Catégorie
               </h2>
-              <div className="flex items-center gap-[9px] absolute right-[-3px]">
+              <div className="flex items-center gap-[9px] absolute right-[-3px] cursor-pointer">
                 <li className="font-bold 2xl:text-[16px] xl:text-[16px] lg:text-[20px] text-[#006] relative top-[-1px] tracking-[0.0001em]  cursor-pointer">
                   Voir Plus
                 </li>
@@ -26,7 +26,7 @@ export default function CategorySection() {
             </p>
           </div>
           {/* category single items */}
-          <div className="mt-[63px] ">
+          <div className="mt-[63px] cursor-pointer">
             <CategoryItems />
           </div>
           {/* category single items */}

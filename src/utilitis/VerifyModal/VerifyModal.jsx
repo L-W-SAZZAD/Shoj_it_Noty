@@ -30,7 +30,7 @@ export default function VerifyModal({
                 }}
                 color="#D6D6D6"
                 size="27px"
-                className="cross_btn absolute right-[20px] top-[20px]    hover:rotate-180 duration-500"
+                className="cross_btn absolute right-[20px] top-[20px]    hover:text-black duration-300"
               />
               <div className="signUp_container 2xl:px-[141px] pt-[75px] xl:px-[132px] lg:px-[110px] px-[70px]">
                 <div>
