@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { RxCross2 } from "react-icons/rx";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
+import OtpInput from "react-otp-input";
 
 export default function VerifyModal({
   setSubModal,
@@ -11,6 +12,8 @@ export default function VerifyModal({
   verify,
   setCheckOut,
 }) {
+  const [value, setValue] = useState("");
+  const [otp, setOtp] = useState("");
   return (
     <div>
       <div className="relative">
@@ -50,7 +53,29 @@ export default function VerifyModal({
                       </label>
                     </div>
                     <div className="input_filed pb-[23px] flex items-center  gap-[15px]">
-                      <input
+                      {/* <input
+                        onChange={(e) => {
+                          if (e.target.value.length === 1) {
+                            return setValue(e.target.value);
+                          }
+                        }}
+                        type="text"
+                        name="number"
+                        id="number"
+                        value={value}
+                        className="w-[40px] h-[46px] border border-[#CFCFCF]   rounded-lg "
+                      /> */}
+                      <div className="input_opt">
+                        <OtpInput
+                          value={otp}
+                          onChange={setOtp}
+                          numInputs={7}
+                          renderInput={(props) => (
+                            <input className="border" {...props} />
+                          )}
+                        />
+                      </div>
+                      {/* <input
                         type="text"
                         name="number"
                         id="number"
@@ -85,13 +110,7 @@ export default function VerifyModal({
                         name="number"
                         id="number"
                         className="w-[40px] h-[46px] border border-[#CFCFCF]   rounded-lg "
-                      />
-                      <input
-                        type="text"
-                        name="number"
-                        id="number"
-                        className="w-[40px] h-[46px] border border-[#CFCFCF]   rounded-lg "
-                      />
+                      /> */}
                     </div>
 
                     {/* button */}

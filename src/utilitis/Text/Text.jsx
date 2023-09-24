@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 
 export default function Text() {
   const [text, setText] = useState("");
+  useEffect(() => {
+    window.addEventListener("click", () => {
+      setText("");
+    });
+  }, [text]);
   return (
     <div className="2xl:flex justify-center relative">
       <div
@@ -23,26 +28,27 @@ export default function Text() {
             className={`outline-none bg-transparent ${
               text.length > 0 ? "h-[65px]" : "h-[57px]"
             } ${
-              text.length > 0 && "  border-b-[2px] border-[#EFEFEF] "
-            } w-full placeholder:text-[rgb(102,119,153)] placeholder:text-[13px] relative top-[-1px] placeholder:font-medium pl-[20px]`}
+              text.length > 0 &&
+              "  border-b-[2px] border-[#EFEFEF] placeholder:text-[#667799] text-[#667799] text-[16px] font-semibold"
+            } w-full placeholder:text-[rgb(102,119,153)] placeholder:text-[13px] relative top-[-1px] placeholder:font-medium pl-[20px] `}
             style={{
               paddingLeft: "20px", // Adjust left padding as needed
             }}
           />
 
           {text.length > 0 && (
-            <button className=" absolute right-[5px] top-[5px] h-[55px] w-[120px] rounded-3xl px-[9px] bg-[#DAE4FF] py-[11px] text-[#000099] text-[15px] font-semibold">
+            <button className=" absolute right-[5px] top-[5px] h-[55px] w-[120px]  rounded-[600px] px-[9px] bg-[#DAE4FF] py-[11px] text-[#000099] text-[15px] font-semibold">
               Rechercher
             </button>
           )}
         </div>
         {text?.length > 0 && (
-          <div className={`w-[98%]  `}>
+          <div className={`w-[98%] mx-auto`}>
             {/* 1 */}
             <div
-              className={`mt-[13px] flex  justify-between items-start hover:bg-[#EEF3FF]  duration-200 rounded-sm py-[4px] w-[97%] mx-auto   relative top-[-2px] ${
+              className={`mt-[11px] flex items-start cursor-pointer  justify-between   hover:bg-[#EEF3FF] rounded-sm duration-200 py-[10px] w-[97%] mx-auto relative top-[-2.34px] ${
                 text.length > 0 && "pl-[12px]"
-              }`}
+              } `}
             >
               <div>
                 <li className="font-extrabold text-[16px] text-[#0D0D0D] ">
@@ -71,7 +77,7 @@ export default function Text() {
             {/* 1 */}
             {/* 1 */}
             <div
-              className={`mt-[11px] flex items-start  justify-between   hover:bg-[#EEF3FF] rounded-sm duration-200 py-[10px] w-[97%] mx-auto relative top-[-2.34px] ${
+              className={`mt-[11px] flex items-start cursor-pointer  justify-between   hover:bg-[#EEF3FF] rounded-sm duration-200 py-[10px] w-[97%] mx-auto relative top-[-2.34px] ${
                 text.length > 0 && "pl-[12px]"
               } `}
             >
@@ -103,7 +109,7 @@ export default function Text() {
             {/* 1 */}
             {/* 1 */}
             <div
-              className={`flex  justify-between items-start mt-[1px]  hover:bg-[#EEF3FF] duration-200 py-2 w-[97%] mx-auto ${
+              className={`flex  justify-between cursor-pointer items-start mt-[1px]  hover:bg-[#EEF3FF] duration-200 py-2 w-[97%] mx-auto ${
                 text.length > 0 && "pl-[12px] "
               }`}
             >

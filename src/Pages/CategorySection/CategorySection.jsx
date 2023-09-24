@@ -14,7 +14,7 @@ export default function CategorySection() {
                 Explorez par Catégorie
               </h2>
               <div className="flex items-center gap-[9px] absolute right-[-3px]">
-                <li className="font-bold 2xl:text-[16px] xl:text-[16px] lg:text-[20px] text-[#006] relative top-[-1px] tracking-[0.0001em] ">
+                <li className="font-bold 2xl:text-[16px] xl:text-[16px] lg:text-[20px] text-[#006] relative top-[-1px] tracking-[0.0001em]  cursor-pointer">
                   Voir Plus
                 </li>
                 <Arrows />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -12,9 +12,12 @@ export default function ShowModal({
   setPosition,
   position,
 }) {
+  const handelClick = () => {
+    setOpen(false);
+  };
   return (
     <div>
-      <div>
+      <div onClick={handelClick}>
         <Modal
           open={open}
           aria-labelledby="modal-modal-title"

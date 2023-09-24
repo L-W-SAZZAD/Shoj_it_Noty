@@ -19,7 +19,7 @@ export default function SignUpModal({
         }}
         color="#D6D6D6"
         size="27px"
-        className="cross_btn absolute right-[20px] top-[20px]    hover:rotate-180 duration-500"
+        className="cross_btn absolute right-[20px] top-[20px]  hover:rotate-180 duration-500"
       />
       <div className="signUp_container w-[372px] mx-auto pt-[72px]">
         <div>

@@ -2,7 +2,7 @@ import { Chip, Divider, Modal } from "@mui/material";
 import React, { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
-import logo from "../../assets/Logo/bbbcc63f-011b-4dd3-bad0-e19625de2de3 1.png";
+import logo from "../../assets/Social Icons/gif.gif";
 
 export default function FinalModal({ setFinalModal, finalModal }) {
   return (

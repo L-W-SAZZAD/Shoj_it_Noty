@@ -17,6 +17,13 @@ export default function Navbar() {
   const [finalModal, setFinalModal] = useState(false);
   const [position, setPosition] = useState(0);
 
+  const handelClick = (e) => {
+    console.log(e);
+    if (e.type === "click") {
+      setOpen(true);
+    }
+  };
+
   useEffect(() => {
     if (open === true) {
       setPosition(48);
@@ -113,9 +120,7 @@ export default function Navbar() {
               <div className="2xl:py-0 xl:py-0 lg:py-0">
                 <button
                   className="uncommon_btn w-[161px] h-[44px] rounded-full  text-[#fff]   flex justify-center items-center text-[15px] font-[500]  border-none outline-none tracking-[0.010em]"
-                  onClick={() => {
-                    setOpen(true);
-                  }}
+                  onClick={handelClick}
                 >
                   Pour Entreprises
                 </button>
