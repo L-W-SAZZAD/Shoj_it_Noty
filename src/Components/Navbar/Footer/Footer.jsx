@@ -9,9 +9,9 @@ import footerLogo from "../../../assets/Social Icons/SVGRepo_iconCarrier.svg";
 
 export default function Footer() {
   return (
-    <div className="bg-[#000033] border-b-[2px] border-b-[#efeeee]">
+    <div className="bg-[#000033]">
       <div className="nav_container 2xl:w-[1542px] 2xl:h-[386px] 2xl:mx-auto xl:w-[1320px] xl:mx-auto lg:w-[1320px] w-full mx-auto 2xl:px-0 xl:px-0 lg:px-0 px-4 relative">
-        <div id="footer ">
+        <div id="footer" className=" absolute bottom-0 left-0 w-full">
           <div>
             <div className="footer lg:flex justify-between   pt-[84px]">
               <div className="logo">
@@ -70,7 +70,7 @@ export default function Footer() {
             </div>
             <hr className="w-full h-[2px] bg-[#FFFFFF] mt-[58px] " />
 
-            <div className="flex justify-between items-center h-[58px]">
+            <div className="flex justify-between items-center h-[58px]  bottom-0">
               <div className="flex items-center justify-center footer_text">
                 <div className="flex items-center ">
                   <img
